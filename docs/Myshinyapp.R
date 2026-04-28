@@ -7,7 +7,6 @@ library(lubridate)
 library(gapminder)
 library(stringr)
 library(knitr)
-library(plotly)
 
 
 # Dataprep of Sewanee utilities and weather
