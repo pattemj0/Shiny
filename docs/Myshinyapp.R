@@ -7,6 +7,7 @@ library(lubridate)
 library(gapminder)
 library(stringr)
 library(knitr)
+library(plotly)
 
 
 # Dataprep of Sewanee utilities and weather
@@ -73,9 +74,9 @@ utilities <- utilities %>% mutate(date = ymdate)
 # Define UI for application that draws a histogram
 
 ui <- fluidPage(
-  titlePanel('Think of a title'),
-  p('Here is a nice little tagline about my dashboard'),
-  helpText('this is helpText, a little more subtle maybe?'),
+  titlePanel('Sewanee Dorm Footprint'),
+  p('A closer look at the energy and water usage of individual Sewanee dorms'),
+  helpText('Can choice of dorm impact our personal environmental footprint?'),
   tabsetPanel(
     tabPanel(h5('Time series'),
              fluidRow(column(4, sliderInput(inputId = 'date',
